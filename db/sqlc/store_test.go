@@ -98,7 +98,6 @@ func TestTransferTx(t *testing.T) {
 		require.True(t, k >= 1 && k <= n)
 		require.NotContains(t, existed, k)
 		existed[k] = true
-
 	}
 
 	// check the final updated balance

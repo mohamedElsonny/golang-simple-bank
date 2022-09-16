@@ -10,7 +10,7 @@ run_postgres:
 	docker run --name postgres12 -p ${PG_PORT}:5432 -e POSTGRES_USER=${PG_USER} -e POSTGRES_PASSWORD=${PG_PASS} -d postgres:12-alpine
 
 run_pgadmin:
-	docker run -p 5050:80 -e 'PGADMIN_DEFAULT_EMAIL=pgadmin4@pgadmin.org' -e 'PGADMIN_DEFAULT_PASSWORD=admin' -d --name pgadmin4 dpage/pgadmin4
+	docker run -p 5050:80 -e PGADMIN_DEFAULT_EMAIL='pgadmin4@pgadmin.org' -e PGADMIN_DEFAULT_PASSWORD='admin' -d --name pgadmin4 dpage/pgadmin4
 
 stop_postgres:
 	docker stop postgres12
