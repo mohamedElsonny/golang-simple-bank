@@ -45,3 +45,6 @@ sqlc:
 
 dropdb:
 	docker exec -it postgres12 dropdb simple_bank
+
+dev:
+	go run main.go 
