@@ -48,3 +48,6 @@ dropdb:
 
 dev:
 	go run main.go 
+
+mock:
+	mockgen -destination=db/mock/store.go -package=mockdb mohamedElsonny/simple-bank/db/sqlc Store
